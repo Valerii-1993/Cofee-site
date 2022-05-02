@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,700;0,900;1,500;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <header class="header">
+       
+    <nav class="nav nav__contact">
+      <a href="../app/index.html">
+        <img class="nav__logo" src="images/logo.svg" alt="logo">
+      </a>
+      <ul class="nav__menu">
+        <li class="nav__menu-list"><a class="nav__menu-list--link page-active" href="../app/index.html">Каталог</a> </li>
+        <li class="nav__menu-list"><a class="nav__menu-list--link" href="../app/blog.html">Блог</a> </li>
+        <li class="nav__menu-list"><a class="nav__menu-list--link" href="../app/contact.html">Контакты</a> </li>
+      </ul>
+      <ul class="nav__menu-btns">
+        <li class="nav__menu-list"><button class="nav__find-btn--open"> <img src="images/find.svg" alt="Vector"></button> </li>
+        <li class="nav__menu-list"><button class="nav__basket"> <a href="/basket.html"><img src="images/package.svg" alt="basket"></a></button></li>
+        <li class="nav__menu-list"><button class="nav__profile"> <img src="images/profile.svg" alt="profile"></button></li>
+      </ul>
+
+
+      <div class="nav__find nav__find--close">
+        <button class="nav__find-btn"> <img src="images/Vector.svg" alt="Vector"> </button>
+        <input class="nav__find-click" type="text" placeholder="Поиск по товарам" aria-label="Поиск">
+        <button class="nav__find-btn-close"> <img src="images/Path.svg" alt="Close"> </button>
+      </div>
+  
+    </nav>
+    <section class="autorization">
+    <div class="registration-container">
+    <div class="registration">
+      <div class="registration__entrance">
+        <img class="registration__entrance-img" src="images/cup-for-registration.png" alt="">
+        <img class="registration__entrance-beens" src="images/beens-for-registration.png" alt="">
+        <h5 class="registration__entrance-title">Добро пожаловать!</h5>
+        <p class="registration__entrance-text">Уже есть аккаунт?</p>
+        <button class="registration__entrance-btn">Войти</button>
+      </div>
+      <div class="registration__base">
+        <img class="registration__base-logo" src="images/logo-for-registration.svg" alt="">
+        <img class="registration__close" src="images/close-registration.svg" alt="">
+        <h4 class="registration__base-title">
+          Регистрация
+        </h4>
+        <p class="registration__base-text">
+          Зарегистрируйтесь на сайте, чтобы первым получать скидки и узнавать акционные предложения!
+        </p>
+        <form action="registration__base-form">
+          <input type="text" placeholder="Имя и фамилия" class="registration__base-form-item">
+          <input type="email" placeholder="Email" class="registration__base-form-item">
+          <input type="tel" placeholder="Телефон" class="registration__base-form-item">
+          <input type="password" placeholder="Придумайте пароль" class="registration__base-form-item">
+        </form>
+        <button class="registration__registration-btn">Зарегистрироваться</button>
+      </div>
+    </div>
+  </div>
+
+    <div class="entrance-container">
+      <div class="entrance">
+        <div class="entrance__registration">
+          <img class="entrance__registration-img" src="images/cup-for-registration.png" alt="">
+          <img class="entrance__registration-beens" src="images/beens-for-registration.png" alt="">
+          <h5 class="entrance__registration-title">Регистрация</h5>
+          <p class="entrance__registration-text">Получайте скидки первым!</p>
+          <button class="entrance__registration-btn">Зарегистрироваться</button>
+        </div>
+        <div class="entrance__base">
+          <img class="entrance__base-logo" src="images/logo-for-registration.svg" alt="">
+          <img class="entrance__close" src="images/close-registration.svg" alt="">
+          <h4 class="entrance__base-title">
+            Войти в личный кабинет
+          </h4>
+          <form action="entrance__base-form">
+            <input type="email" placeholder="Email" class="registration__base-form-item">
+            <input type="password" placeholder="Введите пароль" class="registration__base-form-item">
+          </form>
+          <button class="entrance__entrance-btn"><a href="/personal.html">Войти</a></button>
+          <p class="entrance__forget-pass">Забыли пароль?</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="entrance-container--forget">
+      <div class="entrance--forget">
+        <div class="entrance__registration--forget">
+          <img class="entrance__registration-img--forget" src="images/cup-for-registration.png" alt="">
+          <img class="entrance__registration-beens--forget" src="images/beens-for-registration.png" alt="">
+          <h5 class="entrance__registration-title--forget">Регистрация</h5>
+          <p class="entrance__registration-text--forget">Получайте скидки первым!</p>
+          <button class="entrance__registration-btn--forget">Зарегистрироваться</button>
+        </div>
+        <div class="entrance__base--forget">
+          <img class="entrance__base-logo--forget" src="images/logo-for-registration.svg" alt="">
+          <img class="entrance__close--forget" src="images/close-registration.svg" alt="">
+          <h4 class="entrance__base-title--forget">
+            Забыли пароль?
+          </h4>
+          <p class="entrance__base-text--forget">Введите вашу почту и мы пришлем вам проверочный код на почту</p>
+          <form action="entrance__base-form--forget">
+            <input type="email" placeholder="Email" class="registration__base-form-item">
+          </form>
+          <button class="entrance__entrance-btn--forget">Получить код</button>
+          <p class="entrance__forget-pass--forget">Вернуться на страницу входа</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="recovery-container">
+      <div class="recovery">
+        <div class="recovery__registration">
+          <img class="recovery__registration-img" src="images/cup-for-registration.png" alt="">
+          <img class="recovery__registration-beens" src="images/beens-for-registration.png" alt="">
+          <h5 class="recovery__registration-title">Регистрация</h5>
+          <p class="recovery__registration-text">Получайте скидки первым!</p>
+          <button class="recovery__registration-btn">Зарегистрироваться</button>
+        </div>
+        <div class="recovery__base">
+          <img class="recovery__base-logo" src="images/logo-for-registration.svg" alt="">
+          <img class="recovery__close" src="images/close-registration.svg" alt="">
+          <h4 class="recovery__base-title">
+            Забыли пароль?
+          </h4>
+          <p class="recovery__base-text">Мы выслали вам на почту проверочный код. 
+            Введите его и ниже и придумайте новый пароль</p>
+          <form action="recovery__base-form">
+            <input type="number" placeholder="Введите код" class="recovery__base-form-item">
+            <input type="password" placeholder="Введите новый пароль" class="recovery__base-form-item">
+          </form>
+          <button class="recovery__entrance-btn">Обновить пароль</button>
+          <p class="recovery__repeat-pass">Отправить код повторно?</p>
+        </div>
+      </div>
+    </div>
+  </section>
+    <div class="background"></div>
+  </header>
+  <img class="background-image__personal" src="images/bacground-catalog.png" alt=""> 
+  <img class="catalog-cofee__background-line" src="images/catalog-line.png" alt=""> 
+  <div class="wrapper">
+    <main class="main">
+<div class="breadcrumbs  breadcrumbs-catalog">
+  <ul class="breadcrumbs__list ">
+    <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link breadcrumbs-catalog" href="../app/index.html">Главная</a>
+    </li>
+    <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link breadcrumbs-catalog" href="../app/index.html">Каталог</a>
+    </li>
+</ul>
+    </div>
+    <img class="catalog-food__title-img" src="images/catalog-food.png" alt="">
+    <section id="filtersfood" class="catalog-food">
+      
+      <h2 class="catalog-food__title">
+       Здоровое питание
+      </h2>
+
+          <div id="sortFood" class="catalog-food__filter--container">
+
+            <ul id="sortFood1" class="catalog-food__filter--container-list">
+
+              <li class="catalog-food__filter-container-item">
+                <input id="radio-45" type="radio" name="group-food" value="Цикорий и корень цикория">
+                <label for="radio-45"><img class="catalog-food__filter--container-image" src="images/catalog-food-item.png" alt=""> <p class="catalog-food__filter--container-item-text">Цикорий и корень цикория</p></label>
+              </li>
+
+              <li class="catalog-food__filter-container-item">
+                <input id="radio-46" type="radio" name="group-food" value="Ячменные напитки">
+                <label for="radio-46"><img class="catalog-food__filter--container-image" src="images/catalog-food-item.png" alt=""> <p class="catalog-food__filter--container-item-text"> Ячменные напитки</p></label>
+              </li>
+
+            </ul>
+
+            <ul id="sortFood2" class="catalog-food__filter--container-list">
+
+              <li class="catalog-food__filter-container-item">
+                <input id="radio-47" type="radio" name="group-food" value="Напитки для здоровья">
+                <label for="radio-47"><img class="catalog-food__filter--container-image" src="images/catalog-food-item.png" alt=""> <p class="catalog-food__filter--container-item-text"> Напитки для здоровья</p></label>
+              </li>
+
+              <li class="catalog-food__filter-container-item">
+                <input id="radio-48" type="radio" name="group-food" value="Протеиновые смеси">
+                <label for="radio-48"><img class="catalog-food__filter--container-image" src="images/catalog-food-item.png" alt=""> <p class="catalog-food__filter--container-item-text">Протеиновые смеси</p> </label>
+              </li>
+
+              <li class="catalog-food__filter-container-item">   
+                <input id="radio-49" type="radio" name="group-food" value="Толокняные каши">
+                <label for="radio-49"><img class="catalog-food__filter--container-image" src="images/catalog-food-item.png" alt=""> <p class="catalog-food__filter--container-item-text">Толокняные каши</p></label>
+              </li>
+
+            </ul>
+           
+          </div>
+
+
+<button class="catalog__sort-btn" id="аscendingfood">Сначала дешевые</button>
+<button class="catalog__sort-btn" id="descendingfood">Сначала дорогие</button>
+<button class="catalog__sort-btn" id="raitfood">По рейтингу</button>
+<button class="catalog__sort-btn" id="reviewfood">По популярности</button>
+<button class="catalog__reset-filter--btn">Сбросить фильтр</button>
+<div id="goodsFood" class="catalog-food__goods">
+
+</div>
+  
+<button class="catalog-food__see-more-goods">Показать еще</button>
+    
+    </section>
+  </main>
+
+    <footer class="footer">
+      <img class="footer__img-line" src="images/line.png" alt="line">
+      <img class="footer__img-cofee" src="images/cofee.png" alt="cofee">
+      <img class="footer__img-beans" src="images/beans.png" alt="beans">
+      <div class="footer__info">
+        <h3 class="footer__info-title">
+          Подписка на новости и рассылку
+        </h3>
+        <p class="footer__info-text">
+          Подпишитесь на нашу рассылку прямо сейчас и будьте в курсе новых поставок, скидок и эксклюзивных предложений.
+        </p>
+        <form class="footer__form">
+          <input class="footer__form-input" type="email" placeholder="Ваш email">
+          <button class="footer__form-button" type="submit">Подписаться</button>
+      </form>
+      <p class="footer__form-accept">Нажимая на кнопку “Подписаться”, вы принимаете правила <a class="footer__form-accept--link" href="#"> пользовательского соглашения</a></p>
+
+      </div>
+        <div class="footer__nav">
+
+        <a class="nav__logo" href="/index.html">
+          <img src="images/logo.svg" alt="logo">
+        </a>
+        <ul class="footer__nav-menu">
+          <li class="footer__nav-menu-list"><a class="footer__nav-menu-list--link" href="../app/index.html">Каталог товаров</a> </li>
+          <li class="footer__nav-menu-list"><a class="footer__nav-menu-list--link" href="../app/blog.html">Блог</a> </li>
+          <li class="footer__nav-menu-list"><a class="footer__nav-menu-list--link" href="../app/contact.html">Контакты</a> </li>
+        </ul>
+        </div>
+    </footer>
+  </div>
+
+
+ 
+</body>
+ <script src="js/main.min.js"></script>
+ <script src="js/catalog-food.js"></script>
+</html>

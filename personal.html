@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,700;0,900;1,500;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <header class="header">
+       
+    <nav class="nav nav__contact">
+      <a href="../app/index.html">
+        <img class="nav__logo" src="images/logo.svg" alt="logo">
+      </a>
+      <ul class="nav__menu">
+        <li class="nav__menu-list"><a class="nav__menu-list--link" href="../app/index.html">Каталог</a> </li>
+        <li class="nav__menu-list"><a class="nav__menu-list--link" href="../app/blog.html">Блог</a> </li>
+        <li class="nav__menu-list"><a class="nav__menu-list--link" href="../app/contact.html">Контакты</a> </li>
+      </ul>
+      
+      <form class="nav__find nav__find--close">
+        <button class="nav__find-btn"> <img src="images/Vector.svg" alt="Vector"> </button>
+        <input class="nav__find-click" type="text" placeholder="Поиск по товарам" aria-label="Поиск">
+        <button class="nav__find-btn-close"> <img src="images/Path.svg" alt="Close"> </button>
+      </form>
+   
+      <button class="nav__find-btn--open"> <img src="images/find.svg" alt="Vector"> </button>
+      <button class="nav__basket"> <img src="images/package.svg" alt="basket"></button>
+      <button class="nav__profile"> <img src="images/profile.svg" alt="profile"></button>
+
+    </nav>
+    <section class="autorization">
+    <div class="registration-container">
+    <div class="registration">
+      <div class="registration__entrance">
+        <img class="registration__entrance-img" src="images/cup-for-registration.png" alt="">
+        <img class="registration__entrance-beens" src="images/beens-for-registration.png" alt="">
+        <h5 class="registration__entrance-title">Добро пожаловать!</h5>
+        <p class="registration__entrance-text">Уже есть аккаунт?</p>
+        <button class="registration__entrance-btn">Войти</button>
+      </div>
+      <div class="registration__base">
+        <img class="registration__base-logo" src="images/logo-for-registration.svg" alt="">
+        <img class="registration__close" src="images/close-registration.svg" alt="">
+        <h4 class="registration__base-title">
+          Регистрация
+        </h4>
+        <p class="registration__base-text">
+          Зарегистрируйтесь на сайте, чтобы первым получать скидки и узнавать акционные предложения!
+        </p>
+        <form action="registration__base-form">
+          <input type="text" placeholder="Имя и фамилия" class="registration__base-form-item">
+          <input type="email" placeholder="Email" class="registration__base-form-item">
+          <input type="tel" placeholder="Телефон" class="registration__base-form-item">
+          <input type="password" placeholder="Придумайте пароль" class="registration__base-form-item">
+        </form>
+        <button class="registration__registration-btn">Зарегистрироваться</button>
+      </div>
+    </div>
+  </div>
+
+    <div class="entrance-container">
+      <div class="entrance">
+        <div class="entrance__registration">
+          <img class="entrance__registration-img" src="images/cup-for-registration.png" alt="">
+          <img class="entrance__registration-beens" src="images/beens-for-registration.png" alt="">
+          <h5 class="entrance__registration-title">Регистрация</h5>
+          <p class="entrance__registration-text">Получайте скидки первым!</p>
+          <button class="entrance__registration-btn">Зарегистрироваться</button>
+        </div>
+        <div class="entrance__base">
+          <img class="entrance__base-logo" src="images/logo-for-registration.svg" alt="">
+          <img class="entrance__close" src="images/close-registration.svg" alt="">
+          <h4 class="entrance__base-title">
+            Войти в личный кабинет
+          </h4>
+          <form action="entrance__base-form">
+            <input type="email" placeholder="Email" class="registration__base-form-item">
+            <input type="password" placeholder="Введите пароль" class="registration__base-form-item">
+          </form>
+          <button class="entrance__entrance-btn">Войти</button>
+          <p class="entrance__forget-pass">Забыли пароль?</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="entrance-container--forget">
+      <div class="entrance--forget">
+        <div class="entrance__registration--forget">
+          <img class="entrance__registration-img--forget" src="images/cup-for-registration.png" alt="">
+          <img class="entrance__registration-beens--forget" src="images/beens-for-registration.png" alt="">
+          <h5 class="entrance__registration-title--forget">Регистрация</h5>
+          <p class="entrance__registration-text--forget">Получайте скидки первым!</p>
+          <button class="entrance__registration-btn--forget">Зарегистрироваться</button>
+        </div>
+        <div class="entrance__base--forget">
+          <img class="entrance__base-logo--forget" src="images/logo-for-registration.svg" alt="">
+          <img class="entrance__close--forget" src="images/close-registration.svg" alt="">
+          <h4 class="entrance__base-title--forget">
+            Забыли пароль?
+          </h4>
+          <p class="entrance__base-text--forget">Введите вашу почту и мы пришлем вам проверочный код на почту</p>
+          <form action="entrance__base-form--forget">
+            <input type="email" placeholder="Email" class="registration__base-form-item">
+          </form>
+          <button class="entrance__entrance-btn--forget">Получить код</button>
+          <p class="entrance__forget-pass--forget">Вернуться на страницу входа</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="recovery-container">
+      <div class="recovery">
+        <div class="recovery__registration">
+          <img class="recovery__registration-img" src="images/cup-for-registration.png" alt="">
+          <img class="recovery__registration-beens" src="images/beens-for-registration.png" alt="">
+          <h5 class="recovery__registration-title">Регистрация</h5>
+          <p class="recovery__registration-text">Получайте скидки первым!</p>
+          <button class="recovery__registration-btn">Зарегистрироваться</button>
+        </div>
+        <div class="recovery__base">
+          <img class="recovery__base-logo" src="images/logo-for-registration.svg" alt="">
+          <img class="recovery__close" src="images/close-registration.svg" alt="">
+          <h4 class="recovery__base-title">
+            Забыли пароль?
+          </h4>
+          <p class="recovery__base-text">Мы выслали вам на почту проверочный код. 
+            Введите его и ниже и придумайте новый пароль</p>
+          <form action="recovery__base-form">
+            <input type="number" placeholder="Введите код" class="recovery__base-form-item">
+            <input type="password" placeholder="Введите новый пароль" class="recovery__base-form-item">
+          </form>
+          <button class="recovery__entrance-btn">Обновить пароль</button>
+          <p class="recovery__repeat-pass">Отправить код повторно?</p>
+        </div>
+      </div>
+    </div>
+  </section>
+    <div class="background"></div>
+  </header>
+    <img class="background-image__personal" src="images/for-personal.png" alt=""> 
+  <div class="wrapper">
+    <main class="main">
+<div class="breadcrumbs">
+  <ul class="breadcrumbs__list ">
+    <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link breadcrumbs-catalog" href="../app/index.html">Главная</a>
+    </li>
+    <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link breadcrumbs-catalog" href="../app/personal.html">Личный кабинет</a>
+    </li>
+</ul>
+    </div>
+
+<section class="personal">
+  <div class="personal__block-information">
+      <div class="personal__information">
+          <img class="personal__information-avatar" src="images/avatar.png" alt="avatar">
+          <button class="personal__change-info">Изменить</button>
+           </div>
+          <div class="personal__information-items">
+              <h5 class="personal__information-name">Иван Иванов, здравствуйте!</h5>
+              <p class="personal__information-email">ivan.ivanov@gmail.com</p>
+              <p class="personal__information-number">+ 7 (909) 909 99 99</p>
+              <p class="personal__information-password">Пароль: **************</p>
+          </div>
+          <ul class="personal__discount">
+            
+            <li class="personal__discount-item">Ваша скидка: 10%</li>
+            <li class="personal__discount-total-count">Сумма заказов: 5675 грн*</li>
+            <li class="personal__discount-accumulative">*До скидки 15% не хватает покупок на сумму: 1255 грн  </li>
+          </ul>
+
+ </div>
+
+ <div class="personal__block-order">
+   <h3 class="personal__block-order--title">
+    Мои заказы
+   </h3>
+
+   <div class="personal__block-buttons">
+     <button class="personal__block-button-current active--btn">Текущие заказы</button>
+     <button class="personal__block-button-completed">Завершенные</button>
+   </div>
+
+   <div class="personal__block-button-current_container order">
+   <div class="personal__block-order--current_day">
+   <p class="personal__block-order--text">01.08.2021 12:24:00 - оплачено </p>
+   <p class="personal__block-order--date">Дата доставки: 03.08.2021</p>
+   </div>
+ 
+ <table class="personal__block-order--table">
+  <tr><th>Товаров:</th><th>Сумма заказа:</th><th>Скидка (10%):</th><th>Сумма заказа:</th></tr>
+  <tr><td>2 х Columbia Supremo, 250 г.</td><td>480 грн</td><td>48 грн</td><td>432 грн</td></tr>
+  <tr><td>1 х Напиток ячменый Millor, 250 г.</td><td>480 грн</td><td>48 грн</td><td>432 грн</td></tr>
+</table>
+<div class="personal__block-order--total">
+<p class="personal__block-order--summ">Сумма заказа: 864 грн</p>
+<p class="personal__block-order--delivery">Доставка: 350 грн</p>
+</div>
+  </div>
+
+<div class="personal__block-button-completed_container order disactive">
+  <div class="personal__block-order--completed_day">
+  <p class="personal__block-completed--text">01.08.2021 12:24:00 - оплачено </p>
+  <p class="personal__block-completed--date">Доставлено: 03.08.2021</p>
+  </div>
+
+<table class="personal__block-completed--table">
+ <tr><th>Товаров:</th><th>Сумма заказа:</th><th>Скидка (10%):</th><th>Сумма заказа:</th></tr>
+ <tr><td>2 х Columbia Supremo, 250 г.</td><td>480 грн</td><td>48 грн</td><td>432 грн</td></tr>
+ <tr><td>1 х Напиток ячменый Millor, 250 г.</td><td>480 грн</td><td>48 грн</td><td>432 грн</td></tr>
+</table>
+
+  <div class="personal__block-order-completed-total">
+    <p class="personal__block-order-completed-summ">Сумма заказа: 864 грн</p>
+    <p class="personal__block-order-completed-delivery">Доставка: 350 грн</p>
+    </div>
+
+<div class="personal__block-order--completed_day">
+  <p class="personal__block-completed--text">01.08.2021 12:24:00 - оплачено </p>
+  <p class="personal__block-completed--date">Доставлено: 03.08.2021</p>
+  </div>
+
+<table class="personal__block-completed--table">
+  <tr><th>Товаров:</th><th>Сумма заказа:</th><th>Скидка (10%):</th><th>Сумма заказа:</th></tr>
+  <tr><td>2 х Columbia Supremo, 250 г.</td><td>480 грн</td><td>48 грн</td><td>432 грн</td></tr>
+  <tr><td>1 х Напиток ячменый Millor, 250 г.</td><td>480 грн</td><td>48 грн</td><td>432 грн</td></tr>
+ </table>
+<div class="personal__block-order-completed-total">
+<p class="personal__block-order-completed-summ">Сумма заказа: 864 грн</p>
+<p class="personal__block-order-completed-delivery">Доставка: 350 грн</p>
+</div>
+</div>
+</div>
+
+<div class="personal__stock">
+  <h4 class="personal__stock-title">
+    Персональные акции
+  </h4>
+  <ul class="personal__stock-list">
+    <li class="personal__stock-item">
+      <img class="personal__stock-item--image" src="images/for-stock.png" alt="">
+      <a class="personal__stock-item--link" href="/personal.html">
+      <div class="personal__stock-item--container">
+        <p class="personal__stock-item--title">Купи 3 пачки кофе 
+          и получи 4-ую в подарок!</p>
+        <p class="personal__stock-item--text">Срок акции: до 31.08.2021</p>
+      </div>
+      </a>
+    </li>
+
+    <li class="personal__stock-item">
+        <img class="personal__stock-item--image" src="images/for-stock.png" alt="">
+        <a class="personal__stock-item--link" href="/personal.html">
+        <div class="personal__stock-item--container">
+          <p class="personal__stock-item--title">Купи 3 пачки кофе 
+            и получи 4-ую в подарок!</p>
+        <p class="personal__stock-item--text">Срок акции: до 31.08.2021</p>
+        </div>
+        </a>
+    </li>
+
+    <li class="personal__stock-item">
+        <img class="personal__stock-item--image" src="images/for-stock.png" alt="">
+        <a class="personal__stock-item--link" href="/personal.html">
+          <div class="personal__stock-item--container">
+            <p class="personal__stock-item--title">Купи 3 пачки кофе 
+          и получи 4-ую в подарок!</p>
+        <p class="personal__stock-item--text">Срок акции: до 31.08.2021</p>
+      </div>
+      </a>
+    </li>
+
+    <li class="personal__stock-item">
+      <img class="personal__stock-item--image" src="images/for-stock.png" alt="">
+      <a class="personal__stock-item--link" href="/personal.html">
+      <div class="personal__stock-item--container">
+        <p class="personal__stock-item--title">Купи 3 пачки кофе 
+          и получи 4-ую в подарок!</p>
+        <p class="personal__stock-item--text">Срок акции: до 31.08.2021</p>
+        </div>
+      </a>
+    </li>
+  </ul>
+</div>
+
+</section>
+
+    </main>
+    <footer class="footer">
+      <img class="footer__img-line" src="images/line.png" alt="line">
+      <img class="footer__img-line-map" src="images/line-after-map.png" alt="line">
+      <img class="footer__img-line-cont" src="images/under-contact.png" alt="line">
+      <img class="footer__img-cofee" src="images/cofee.png" alt="cofee">
+      <img class="footer__img-beans" src="images/beans.png" alt="beans">
+      <div class="footer__info">
+        <h3 class="footer__info-title">
+          Подписка на новости и рассылку
+        </h3>
+        <p class="footer__info-text">
+          Подпишитесь на нашу рассылку прямо сейчас и будьте в курсе новых поставок, скидок и эксклюзивных предложений.
+        </p>
+        <form class="footer__form">
+          <input class="footer__form-input" type="email" placeholder="Ваш email">
+          <button class="footer__form-button" type="submit">Подписаться</button>
+      </form>
+      <p class="footer__form-accept">Нажимая на кнопку “Подписаться”, вы принимаете правила <a class="footer__form-accept--link" href="#"> пользовательского соглашения</a></p>
+
+      </div>
+        <div class="footer__nav">
+
+        <a class="nav__logo" href="#">
+          <img src="images/logo.svg" alt="logo">
+        </a>
+        <ul class="footer__nav-menu">
+          <li class="footer__nav-menu-list"><a class="footer__nav-menu-list--link" href="../app/index.html">Каталог товаров</a> </li>
+          <li class="footer__nav-menu-list"><a class="footer__nav-menu-list--link" href="../app/blog.html">Блог</a> </li>
+          <li class="footer__nav-menu-list"><a class="footer__nav-menu-list--link" href="../app/contact.html">Контакты</a> </li>
+        </ul>
+        </div>
+    </footer>
+  </div>
+
+
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

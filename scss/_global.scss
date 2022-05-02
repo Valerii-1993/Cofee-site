@@ -1,0 +1,47 @@
+html,
+body {
+	height: 100%;
+	margin: 0 auto;
+	
+}
+body{
+	font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+	font-size: 16px;
+	line-height: 27px;
+	color: black;
+	overflow-x: hidden;
+	min-width: 300px;
+	position: relative;
+	width: 1904px;
+	margin: 0 auto;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.main {
+	flex: 1 0 auto;
+	width: 1904px;
+}
+.footer {
+	flex: 0 0 auto;
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+
+a,
+button,
+label{
+	cursor: pointer;
+}
+
+

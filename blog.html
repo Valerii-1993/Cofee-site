@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,700;0,900;1,500;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <header class="header">
+    
+    <nav class="nav nav__contact">
+      <a href="../app/index.html">
+        <img class="nav__logo" src="images/logo.svg" alt="logo">
+      </a>
+      <ul class="nav__menu">
+        <li class="nav__menu-list"><a class="nav__menu-list--link" href="../app/index.html">Каталог</a> </li>
+        <li class="nav__menu-list"><a class="nav__menu-list--link page-active" href="../app/blog.html">Блог</a> </li>
+        <li class="nav__menu-list"><a class="nav__menu-list--link" href="../app/contact.html">Контакты</a> </li>
+      </ul>
+      <ul class="nav__menu-btns">
+        <li class="nav__menu-list"><button class="nav__find-btn--open"> <img src="images/find.svg" alt="Vector"></button> </li>
+        <li class="nav__menu-list"><button class="nav__basket"> <a href="/basket.html"><img src="images/package.svg" alt="basket"></a></button></li>
+        <li class="nav__menu-list"><button class="nav__profile"> <img src="images/profile.svg" alt="profile"></button></li>
+      </ul>
+
+
+      <div class="nav__find nav__find--close">
+        <button class="nav__find-btn"> <img src="images/Vector.svg" alt="Vector"> </button>
+        <input class="nav__find-click" type="text" placeholder="Поиск по товарам" aria-label="Поиск">
+        <button class="nav__find-btn-close"> <img src="images/Path.svg" alt="Close"> </button>
+      </div>
+  
+    </nav>
+    <section class="autorization">
+      <div class="registration-container">
+      <div class="registration">
+        <div class="registration__entrance">
+          <img class="registration__entrance-img" src="images/cup-for-registration.png" alt="">
+          <img class="registration__entrance-beens" src="images/beens-for-registration.png" alt="">
+          <h5 class="registration__entrance-title">Добро пожаловать!</h5>
+          <p class="registration__entrance-text">Уже есть аккаунт?</p>
+          <button class="registration__entrance-btn">Войти</button>
+        </div>
+        <div class="registration__base">
+          <img class="registration__base-logo" src="images/logo-for-registration.svg" alt="">
+          <img class="registration__close" src="images/close-registration.svg" alt="">
+          <h4 class="registration__base-title">
+            Регистрация
+          </h4>
+          <p class="registration__base-text">
+            Зарегистрируйтесь на сайте, чтобы первым получать скидки и узнавать акционные предложения!
+          </p>
+          <form action="registration__base-form">
+            <input type="text" placeholder="Имя и фамилия" class="registration__base-form-item">
+            <input type="email" placeholder="Email" class="registration__base-form-item">
+            <input type="tel" placeholder="Телефон" class="registration__base-form-item">
+            <input type="password" placeholder="Придумайте пароль" class="registration__base-form-item">
+          </form>
+          <button class="registration__registration-btn">Зарегистрироваться</button>
+        </div>
+      </div>
+    </div>
+  
+      <div class="entrance-container">
+        <div class="entrance">
+          <div class="entrance__registration">
+            <img class="entrance__registration-img" src="images/cup-for-registration.png" alt="">
+            <img class="entrance__registration-beens" src="images/beens-for-registration.png" alt="">
+            <h5 class="entrance__registration-title">Регистрация</h5>
+            <p class="entrance__registration-text">Получайте скидки первым!</p>
+            <button class="entrance__registration-btn">Зарегистрироваться</button>
+          </div>
+          <div class="entrance__base">
+            <img class="entrance__base-logo" src="images/logo-for-registration.svg" alt="">
+            <img class="entrance__close" src="images/close-registration.svg" alt="">
+            <h4 class="entrance__base-title">
+              Войти в личный кабинет
+            </h4>
+            <form action="entrance__base-form">
+              <input type="email" placeholder="Email" class="registration__base-form-item">
+              <input type="password" placeholder="Введите пароль" class="registration__base-form-item">
+            </form>
+            <button class="entrance__entrance-btn"><a href="/personal.html"> Войти</a></button>
+            <p class="entrance__forget-pass">Забыли пароль?</p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="entrance-container--forget">
+        <div class="entrance--forget">
+          <div class="entrance__registration--forget">
+            <img class="entrance__registration-img--forget" src="images/cup-for-registration.png" alt="">
+            <img class="entrance__registration-beens--forget" src="images/beens-for-registration.png" alt="">
+            <h5 class="entrance__registration-title--forget">Регистрация</h5>
+            <p class="entrance__registration-text--forget">Получайте скидки первым!</p>
+            <button class="entrance__registration-btn--forget">Зарегистрироваться</button>
+          </div>
+          <div class="entrance__base--forget">
+            <img class="entrance__base-logo--forget" src="images/logo-for-registration.svg" alt="">
+            <img class="entrance__close--forget" src="images/close-registration.svg" alt="">
+            <h4 class="entrance__base-title--forget">
+              Забыли пароль?
+            </h4>
+            <p class="entrance__base-text--forget">Введите вашу почту и мы пришлем вам проверочный код на почту</p>
+            <form action="entrance__base-form--forget">
+              <input type="email" placeholder="Email" class="registration__base-form-item">
+            </form>
+            <button class="entrance__entrance-btn--forget">Получить код</button>
+            <p class="entrance__forget-pass--forget">Вернуться на страницу входа</p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="recovery-container">
+        <div class="recovery">
+          <div class="recovery__registration">
+            <img class="recovery__registration-img" src="images/cup-for-registration.png" alt="">
+            <img class="recovery__registration-beens" src="images/beens-for-registration.png" alt="">
+            <h5 class="recovery__registration-title">Регистрация</h5>
+            <p class="recovery__registration-text">Получайте скидки первым!</p>
+            <button class="recovery__registration-btn">Зарегистрироваться</button>
+          </div>
+          <div class="recovery__base">
+            <img class="recovery__base-logo" src="images/logo-for-registration.svg" alt="">
+            <img class="recovery__close" src="images/close-registration.svg" alt="">
+            <h4 class="recovery__base-title">
+              Забыли пароль?
+            </h4>
+            <p class="recovery__base-text">Мы выслали вам на почту проверочный код. 
+              Введите его и ниже и придумайте новый пароль</p>
+            <form action="recovery__base-form">
+              <input type="number" placeholder="Введите код" class="recovery__base-form-item">
+              <input type="password" placeholder="Введите новый пароль" class="recovery__base-form-item">
+            </form>
+            <button class="recovery__entrance-btn">Обновить пароль</button>
+            <p class="recovery__repeat-pass">Отправить код повторно?</p>
+          </div>
+        </div>
+      </div>
+    </section>
+      <div class="background"></div>
+  </header>
+  <div class="wrapper">
+    <main class="main">
+      <div class="breadcrumbs">
+        <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="/index.html">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="/blog.html">Блог</a>
+            </li>
+        </ul>
+      </div>
+  <section class="blog">
+      <div class="blog__buttons">
+        <button id="blog__btn-tutorial" class="blog__btn-tutorial blog__btn active--btn">Обучение</button>
+        <button id="blog__btn-news" class="blog__btn-news blog__btn">Новости</button>
+        <button id="blog__btn-questions" class="blog__btn-questions blog__btn">Частые вопросы</button>
+      </div>
+      <div class="blog__tutorial sector">
+      <h3 class="blog__title">
+        Приготовление кофе разными способами
+      </h3>
+
+      <div class="blog__tutorial-container">
+        <ul class="blog__tutorial-sort">
+          <li class="blog__tutorial-sort--item"><button id="turka" class="blog__tutorial-sort--btn active--btn"><p>Турка</p><img src="images/for-blog/turka.svg" alt=""></button></li>
+          <li class="blog__tutorial-sort--item"><button id="french" class="blog__tutorial-sort--btn"><p>Френч-пресс</p><img src="images/for-blog/french.svg" alt=""></button></li>
+          <li class="blog__tutorial-sort--item"><button id="makka" class="blog__tutorial-sort--btn"><p>Макка</p><img src="images/for-blog/mokko.png" alt=""></button></li>
+          <li class="blog__tutorial-sort--item"><button id="espresso" class="blog__tutorial-sort--btn"><p>Эспрессо</p><img src="images/for-blog/Espresso.png" alt=""></button></li>
+          <li class="blog__tutorial-sort--item"><button id="voronka" class="blog__tutorial-sort--btn"><p>Воронка</p><img src="images/for-blog/voron.png" alt=""></button></li>
+          <li class="blog__tutorial-sort--item"><button id="aeropress" class="blog__tutorial-sort--btn"><p>Аэропресс</p><img src="images/for-blog/aeropr.png" alt=""></button></li>
+          <li class="blog__tutorial-sort--item"><button id="cup" class="blog__tutorial-sort--btn"><p>Чашка</p><img src="images/for-blog/coffee-cup.png" alt=""></button></li>
+          <li class="blog__tutorial-sort--item"><button id="machine" class="blog__tutorial-sort--btn"><p>Автомат</p><img src="images/for-blog/autom.png" alt=""></button></li>
+        </ul>
+      </div>
+
+      <div id="blog__tutorial-sort--turka" class="blog__tutorial-section">
+        <h3 class="blog__tutorial-title">
+          Как сварить кофе в турке:
+        </h3>
+        <p class="blog__tutorial-title--text">
+          Как сделать правильный кофе в турку? Подготовьте продукты. Кофе берите только в зернах, причем они должны быть свежими, не больше месяца со дня обжарки. Лучший сорт для варки именно в турке - арабика. Он меньше горчит, имеет более сильный аромат и менее крепкий, в отличие от робусты. Воду берите бутилированную, она мягче любой фильтрованной. Сахар можете не класть, но если решите, возьмите тростниковый. Плюс щепотку соли - она раскрывает вкус кофе.
+          </p>
+          <p class="blog__tutorial-title--text">
+            Возьмите турку, кофе вкуснее получается в медной, но и из нержавейки тоже подойдет. Засыпьте в нее кофе из расчета 2 чайные ложки на одну порцию. Добавьте сахар и соль. Не бойтесь, соль не придаст соленого вкуса, она лишь усилит аромат кофе. Тщательно перемешайте все ингредиенты. Далее налейте воду, из расчета 100-120 мл на одну порцию. Перемешивать больше уже не нужно, ложку отложите.
+          </p>
+          <p class="blog__tutorial-title--text">
+            Пенка начнет подниматься, стремясь "убежать" из турки. Именно в этот момент снимите турку с огня и подождите, пока кофе успокоится и пенка осядет. Верните турку на огонь и повторите этот процесс - дождитесь поднятия пенки, снимите, успокойте. Повторите так 4 раза. Это нужно для лучшей экстракции - процесса, при котором кофе отдает свои эфирные масла. Но не допускайте, чтобы кофе при этом закипел - лучшая температура для заваривания кофе - 95-96°.
+        </p>
+        <img class="blog__tutorial-img" src="images/for-blog/turka.jpg" alt="">
+      </div>
+
+      <div id="blog__tutorial-sort--french" class="blog__tutorial-section disactive">
+        <h3 class="blog__tutorial-title">
+          Как использовать Френч-пресс:
+        </h3>
+        <p class="blog__tutorial-title--text">
+          Первое, что нужно запомнить – для приготовления напитков с помощью френч-прессов можно использовать кофе и чай любых сортов. При этом следует учитывать, что кофе крупного помола является оптимальным вариантом, так как при заваривании вкус и аромат таких напитков раскрывается с особой силой. Процедура заваривания кофе и чая достаточно проста и не требует наличия специальных навыков.
+          </p>
+          <p class="blog__tutorial-title--text">
+            Перед закладыванием кофе или чая колбу необходимо обдать горячей водой. При этом использовать кипяток не рекомендуется, так как из-за резкого перепада температур стекло может лопнуть.
+            Френч-пресс предназначен для заваривания напитка, который будет употребляться сразу после приготовления, поэтому количество заварки чая или кофе напрямую зависит от объема колбы. Так, при заварке чая следует использовать 3 ч. л. на 350 мл воды, кофе – 15-20 г на 300-350 мл воды. Температура воды должна составлять 92-96°C, время заваривания – 3-5 мин.
+          </p>
+          <p class="blog__tutorial-title--text">
+            Горячая вода заливается в колбу таким образом, чтобы ее уровень находился на несколько см ниже края. При этом поршень френч-пресса должен касаться поверхности воды. Оставляем все в таком положении до тех пор, пока чай или кофе не заварится.
+        По истечении указанного срока поршень необходимо опустить на дно колбы. Помните, что если в фильтре находится кофе среднего помола или измельченный чай, то при опускании поршня потребуется приложить определенные усилия.
+        </p>
+        <img class="blog__tutorial-img" src="images/for-blog/french.jpg" alt="">
+      </div>
+
+      <div id="blog__tutorial-sort--makka" class="blog__tutorial-section disactive">
+        <h3 class="blog__tutorial-title">
+          Как использовать Мaкка:
+        </h3>
+        <p class="blog__tutorial-title--text">
+          Выбор конкретного сорта и степени обжарки зависит больше от ваших личных предпочтений, однако стоит помнить, что вкусный кофе в гейзерной кофеварке получится лишь в том случае, если сам кофе будет:
+свежим,качественным,правильной степени помола.
+          </p>
+          <p class="blog__tutorial-title--text">
+            Налейте в нижний резервуар воды до уровня предохранительного клапана.
+Кто-то наливает холодную, кто-то советует заливать сразу кипяток, аргументируя это тем, что так можно сэкономить время приготовления и избежать горчинки. Мы же советуем вам проявить творческую жилку и поэкспериментировать самим ; Но будьте осторожны при работе с кипятком: алюминий быстро нагревается – используйте прихватку, когда будете закручивать кофеварку, чтобы не обжечься.Щедро наполните воронку молотым кофе. Не нужно утрамбовывать кофе, иначе вода попросту не сможет перейти в верхний резервуар.
+          </p>
+          <p class="blog__tutorial-title--text">
+            Как понять, что кофе готов: когда вы услышите журчание (или фырканье – кому как нравится) и увидите, что кофе полностью вышел в верхний резервуар, а из столбца выходит уже не кофе, а жидкая пена, снимите кофеварку с огня.
+        </p>
+        <img class="blog__tutorial-img" src="images/for-blog/gejzernaya.jpg" alt="">
+      </div>
+
+      <div id="blog__tutorial-sort--espresso" class="blog__tutorial-section disactive">
+        <h3 class="blog__tutorial-title">
+          Как готовить Эспрессо:
+        </h3>
+        <p class="blog__tutorial-title--text">
+          Чтобы приготовить вкусный эспрессо, нужно внимательно выбирать зерно, следить за чистотой оборудования, давлением и температурой воды, дозировкой кофе, темперовкой и временем приготовления. Ещё нужен опыт, который постепенно появляется, когда человек готовит эспрессо, пробует его и делает выводы.
+          </p>
+          <p class="blog__tutorial-title--text">
+            Для эспрессо мы рекомендуем использовать специально предназначенные эспрессо-смеси и моносорта. Их обжаривают иначе, чем для альтернативных методов приготовления: по индивидуальным профайлам обжарки и, как правило, немного темнее. Это делают, чтобы во время приготовления в кофемашине вкус получался слаще и сбалансированнее.
+          </p>
+          <p class="blog__tutorial-title--text">
+            После темперовки холдер вставляют в кофейную группу и включают пролив.
+При использовании кофемашины с теплообменником, перед установкой холдера в группу, нужно пролить 50–100 мл воды, чтобы температура снизилась до рабочей. Обычно в это время идёт кипяток с шипением, как только шипение прекращается — можно готовить эспрессо.
+При использовании двубойлерной кофемашины проливать воду тоже нужно, но не для того, чтобы сбросить температуру, а чтобы очистить дисперсионную сетку от остатков кофе от предыдущего приготовления. В этом случае нужно проливать значительно меньше воды — пока она не станет чистой.
+После установки холдера в кофемашину нужно сразу же включать пролив, так как в кофе при высокой температуре уже запускаются химические реакции. Как правило, эспрессо готовится за 23–30 секунд от момента включения помпы до её выключения.
+        </p>
+        <img class="blog__tutorial-img" src="images/for-blog/espresso.jpg" alt="">
+      </div>
+
+      <div id="blog__tutorial-sort--voronka" class="blog__tutorial-section disactive">
+        <h3 class="blog__tutorial-title">
+          Как использовать Воронку правильно:
+        </h3>
+        <p class="blog__tutorial-title--text">
+          Пуровер — это альтернативный метод заваривания кофе, в котором используется специальная воронка. Иногда этот метод так и называют — «воронка». Иногда V60 или Hario в честь наиболее популярного производителя воронок.
+          Воронки для пуровера делают разные производители из разных материалов: пластика, керамики или стекла, разных форм и размеров. Но в России наиболее популярны пуроверы японской фирмы Hario.
+          </p>
+          <p class="blog__tutorial-title--text">
+            Соотношение веса кофе к весу готового кофе всегда остается одним — 60 грамм зерна на 1 литр воды. Чтобы определить дозировку для каждого конкретного случая, нужно просто рассчитать пропорции. Например, чтобы приготовить стандартную чашку кофе в 250 мл, вам понадобится 15 грамм кофе.Первый этап заваривания — предсмачивание. Он помогает улучшить вкус кофе и сделать результаты более стабильными. Особенно, если кофе обжарен менее месяца назад. Этот этап позволяет выйти из кофе лишним газам, чтобы во время экстракции они не влияли на результат.
+          </p>
+          <p class="blog__tutorial-title--text">
+            После предсмачивания нужно аккуратно, тонкой струйкой начать вливать воду в кофе круговыми движениями по часовой стрелке, начиная из центра и продвигаясь ближе к краям.
+Общее время заваривания вместе с предсмачиванием должно составить примерно 2,5 минуты — это время будет меняться, если вы готовите больше или меньше кофе.
+В конце нужно выкинуть использованный фильтр с кофе, взболтать напиток для насыщения кислородом и наслаждаться вкусом!
+        </p>
+        <img class="blog__tutorial-img" src="images/for-blog/voronka.jpg" alt="">
+      </div>
+
+      <div id="blog__tutorial-sort--aeropress" class="blog__tutorial-section disactive">
+        <h3 class="blog__tutorial-title">
+          Как использовать Аэропресс:
+        </h3>
+        <p class="blog__tutorial-title--text">
+          Доведите почти до кипения чистую фильтрованную или бутилированную воду. Мы готовим одну чашку кофе, поэтому нам будет достаточно 350-400 мл, 200 мы будем использовать для приготовления, а остальные — для промывания фильтра. Наш рецепт: 17 гр кофе на 220 мл воды.Взвесьте и размелите 15 граммов свежеобжаренного кофе. Свежесть обжарки для аэропресса, как и для других альтернативных способов приготовления, является решающим фактором. Помол кофе нужен средний, чуть мельче чем для капельной кофеварки или кемекса, то есть как некрупная морская соль.
+          </p>
+          <p class="blog__tutorial-title--text">
+            Налейте в нижний резервуар воды до уровня предохранительного клапана.
+Кто-то наливает холодную, кто-то советует заливать сразу кипяток, аргументируя это тем, что так можно сэкономить время приготовления и избежать горчинки. Мы же советуем вам проявить творческую жилку и поэкспериментировать самим ; Но будьте осторожны при работе с кипятком: алюминий быстро нагревается – используйте прихватку, когда будете закручивать кофеварку, чтобы не обжечься.Щедро наполните воронку молотым кофе. Не нужно утрамбовывать кофе, иначе вода попросту не сможет перейти в верхний резервуар.
+          </p>
+          <p class="blog__tutorial-title--text">
+            Залейте молотый кофе 30 мл горячей воды, размешайте ложкой или бамбуковой палочкой и дайте настояться 30 секунд.Залейте в аэропресс оставшиеся 160 мл горячей воды и дайте настояться одну минуту.
+        </p>
+        <img class="blog__tutorial-img" src="images/for-blog/aeropress.jpg" alt="">
+      </div>
+
+      <div id="blog__tutorial-sort--cup" class="blog__tutorial-section disactive">
+        <h3 class="blog__tutorial-title">
+          Как заварить кофе в чашке:
+        </h3>
+        <p class="blog__tutorial-title--text">
+В идеале вы должны использовать 55 грамм кофе на литр воды, но вряд ли вы взяли с собой в дорогу весы и калькулятор, поэтому воспользуемся “дедовским” методом.
+В 1 чайной ложке с горкой примерно 6 гр. молотого кофе. Для приготовления в обычной чайной чашке на 200 мл., нам понадобится 12 гр. кофе – это 2 чайные ложки. Если у вас большая кружка, то возьмите 3 ложки.
+Помол: мелкий или средний (при покупке попросите помолоть под чашку)
+          </p>
+          <p class="blog__tutorial-title--text">
+            Засыпьте молотый кофе в чашку.
+Залейте в чашку воду, до краев. У вас должна образоваться густая кофейная шапка.
+Подождите четыре минуты, а затем осторожно перемешайте кофе до самого дна, чтобы разбить шапку.
+          </p>
+          <p class="blog__tutorial-title--text">
+            Если у вас осталось немного пенки на поверхности, то ничего страшного, просто осторожно снимите ее ложкой (так же, как вы снимаете пенки, когда готовите бульон).
+Кофе готов! Но, напиток может быть еще слишком горячим, так что лучше дать ему еще пару минут остыть, чтобы не обжечься.
+        </p>
+        <img class="blog__tutorial-img" src="images/for-blog/cup.jpg" alt="">
+      </div>
+
+      <div id="blog__tutorial-sort--machine" class="blog__tutorial-section disactive">
+        <h3 class="blog__tutorial-title">
+          Как приготовить кофе в кофемашине:
+        </h3>
+        <p class="blog__tutorial-title--text">
+          то основной «машинный» рецепт. Ключевое звено в технологии приготовления эспрессо — экстракция вкусовых и ароматических веществ кофе осуществляется под воздействием давления, которое обеспечивает кофемашина. Чтобы добиться наилучшего результата, нужно соблюдать такой порядок.
+
+            Молоть зерна непосредственно перед приготовлением кофе. Эфирные масла, которые сообщают напитку присущий ему аромат, очень быстро улетучиваются.
+          Самый важный параметр — величина помола. Слишком мелкий помол придаст вкусу неприятную горечь, а слишком крупный сделает его кисловатым.
+            Тщательно спрессовать кофе в холдере, чтобы получилась таблетка.
+                Установить холдер с таблеткой в группу и сразу же включить пролив воды. Если процесс приготовления кофе в кофемашине организован по всем правилам, то экстракция занимает не больше 30 секунд.
+              Главный признак качественного эспрессо — устойчивая густая пенка. Этот вид кофе готовят и подают крошечными порциями. Для сервировки используют маленькие чашечки, лучше с толстыми стенками, предварительно подогретые.
+          </p>
+          <p class="blog__tutorial-title--text">
+            Приготовьте эспрессо, отдельно взбейте молоко и добавьте его в чашку с кофе — вот и капучино. Если напиток приготовлен правильно, то на пенке может удержаться небольшая ложечка сахару.
+          </p>
+          <p class="blog__tutorial-title--text">
+            Латте — еще один кофейно-молочный напиток, однако соотношение ингредиентов меняется в пользу молока: его втрое больше. Взбитое молоко наливают в большой стакан и добавляют порцию эспрессо, следя, чтобы они не смешивались. Получается трехслойный коктейль: внизу молоко, посередине кофе, а сверху — молочная пенка. В этот напиток часто добавляют сиропы, которые привносят свежий привкус ванили или фруктов.
+              Приготовление действительно вкусного кофе невозможно без хорошей кофемашины. Она должна обеспечивать необходимое давление, оптимально взбивать молоко и правильно смешивать его с основой. Компания «Арт-Вендинг» предлагает бесплатную аренду кофемашины в офис. У нас вы можете подобрать автомат, максимально ориентированный на ваши запросы.
+        </p>
+        <img class="blog__tutorial-img" src="images/for-blog/machine.jpg" alt="">
+      </div>
+      </div>
+
+      <article class="blog__news sector disactive">
+        <h4 id="news" class="blog__news-title">
+          Новости:
+        </h4>
+        <div class="blog__news-container">
+          <img class="blog__news-container--img" src="images/cofee-tanzania.png" alt="cofee">
+          <div class="blog__news-container--item">
+            <h4 class="blog__news-container--item_title">Танзанийский кофе. Откуда он взялся и почему мы его так любим?</h4>
+            <p class="blog__news-container--item_text">Танзания – красивая африканская страна. Именно здесь расположены легендарные географические объекты – вулкан Килиманджаро и озеро Виктория. 
+              Но наш интерес вызван не столько природными красотами, сколько кофе...</p>
+            <p class="blog__news-container--item_author">Автор статьи: Иван Иванов<span><a class="blog__news-container--item_more" href="">Подробнее</a> </span> </p>
+          </div>
+        </div>
+          <div class="blog__news-container">
+            <img class="blog__news-container--img" src="images/cofee-tanzania.png" alt="cofee">
+            <div class="blog__news-container--item">
+              <h4 class="blog__news-container--item_title">Танзанийский кофе. Откуда он взялся и почему мы его так любим?</h4>
+              <p class="blog__news-container--item_text">Танзания – красивая африканская страна. Именно здесь расположены легендарные географические объекты – вулкан Килиманджаро и озеро Виктория. 
+                Но наш интерес вызван не столько природными красотами, сколько кофе...</p>
+              <p class="blog__news-container--item_author">Автор статьи: Иван Иванов<span><a class="blog__news-container--item_more" href="">Подробнее</a> </span> </p>
+            </div>
+          </div>
+            <div class="blog__news-container">
+              <img class="blog__news-container--img" src="images/cofee-tanzania.png" alt="cofee">
+              <div class="blog__news-container--item">
+                <h4 class="blog__news-container--item_title">Танзанийский кофе. Откуда он взялся и почему мы его так любим?</h4>
+                <p class="blog__news-container--item_text">Танзания – красивая африканская страна. Именно здесь расположены легендарные географические объекты – вулкан Килиманджаро и озеро Виктория. 
+                  Но наш интерес вызван не столько природными красотами, сколько кофе...</p>
+                <p class="blog__news-container--item_author">Автор статьи: Иван Иванов<span><a class="blog__news-container--item_more" href="">Подробнее</a> </span> </p>
+              </div>
+            </div>
+
+            <div class="blog__news-container--more disactive">
+              <div class="blog__news-container">
+                <img class="blog__news-container--img" src="images/cofee-tanzania.png" alt="cofee">
+                <div class="blog__news-container--item">
+                  <h4 class="blog__news-container--item_title">Танзанийский кофе. Откуда он взялся и почему мы его так любим?</h4>
+                  <p class="blog__news-container--item_text">Танзания – красивая африканская страна. Именно здесь расположены легендарные географические объекты – вулкан Килиманджаро и озеро Виктория. 
+                    Но наш интерес вызван не столько природными красотами, сколько кофе...</p>
+                  <p class="blog__news-container--item_author">Автор статьи: Иван Иванов<span><a class="blog__news-container--item_more" href="">Подробнее</a> </span> </p>
+                </div>
+              </div>
+              <div class="blog__news-container">
+                  <img class="blog__news-container--img" src="images/cofee-tanzania.png" alt="cofee">
+                  <div class="blog__news-container--item">
+                    <h4 class="blog__news-container--item_title">Танзанийский кофе. Откуда он взялся и почему мы его так любим?</h4>
+                    <p class="blog__news-container--item_text">Танзания – красивая африканская страна. Именно здесь расположены легендарные географические объекты – вулкан Килиманджаро и озеро Виктория. 
+                      Но наш интерес вызван не столько природными красотами, сколько кофе...</p>
+                    <p class="blog__news-container--item_author">Автор статьи: Иван Иванов<span><a class="blog__news-container--item_more" href="">Подробнее</a> </span> </p>
+                  </div>
+              </div>
+              <div class="blog__news-container">
+          <img class="blog__news-container--img" src="images/cofee-tanzania.png" alt="cofee">
+          <div class="blog__news-container--item">
+            <h4 class="blog__news-container--item_title">Танзанийский кофе. Откуда он взялся и почему мы его так любим?</h4>
+            <p class="blog__news-container--item_text">Танзания – красивая африканская страна. Именно здесь расположены легендарные географические объекты – вулкан Килиманджаро и озеро Виктория. 
+              Но наш интерес вызван не столько природными красотами, сколько кофе...</p>
+            <p class="blog__news-container--item_author">Автор статьи: Иван Иванов<span><a class="blog__news-container--item_more" href="">Подробнее</a> </span> </p>
+          </div>
+            </div>
+          </div>
+      <button class="blog__news-container--item_seemore">Показать еще</button>
+      </article>
+
+      <div class="blog__questions sector disactive">
+        <h3 class="blog__questions__title">
+          Частые вопросы:
+        </h3>
+        <div class="blog__questions__container">
+          <img class="blog__questions__container-img" src="images/for-blog/cup-for-question.png" alt="">
+          <img class="blog__questions__container-img-beens" src="images/for-blog/beens-back.png" alt="">
+          <ul class="blog__questions__container-list">
+            <li class="blog__questions__container-list--item">
+              <h5 class="blog__questions__container-list--item_title click1"> Почему мне стоит выбрать вас?</h5>
+              <p class="blog__questions__container-list--item_text for__open1 disactive">Задача организации, в особенности же рамки и место обучения кадров способствует подготовки и реализации систем массового участия. Таким образом укрепление и развитие структуры способствует подготовки и реализации направлений прогрессивного развития</p>
+            </li>
+            <li class="blog__questions__container-list--item">              
+              <h5 class="blog__questions__container-list--item_title click2">Какой корпоративный адрес компании в Украине?</h5>
+              <p class="blog__questions__container-list--item_text for__open2 disactive">Задача организации, в особенности же рамки и место обучения кадров способствует подготовки и реализации систем массового участия. Таким образом укрепление и развитие структуры способствует подготовки и реализации направлений прогрессивного развития</p>
+            </li>
+            <li class="blog__questions__container-list--item">              
+              <h5 class="blog__questions__container-list--item_title click3">Чем вы отличаетесь от других компаний?</h5>
+              <p class="blog__questions__container-list--item_text for__open3 disactive">Задача организации, в особенности же рамки и место обучения кадров способствует подготовки и реализации систем массового участия. Таким образом укрепление и развитие структуры способствует подготовки и реализации направлений прогрессивного развития</p>
+            </li>
+            <li class="blog__questions__container-list--item">              
+              <h5 class="blog__questions__container-list--item_title click4">Нужна ли учетная запись, чтобы сделать заказ?</h5>
+              <p class="blog__questions__container-list--item_text for__open4 disactive">Задача организации, в особенности же рамки и место обучения кадров способствует подготовки и реализации систем массового участия. Таким образом укрепление и развитие структуры способствует подготовки и реализации направлений прогрессивного развития</p>
+            </li>
+            <li class="blog__questions__container-list--item">              
+              <h5 class="blog__questions__container-list--item_title click5">Как зарегистрироваться?</h5>
+              <p class="blog__questions__container-list--item_text for__open5 disactive">Задача организации, в особенности же рамки и место обучения кадров способствует подготовки и реализации систем массового участия. Таким образом укрепление и развитие структуры способствует подготовки и реализации направлений прогрессивного развития</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+  </section>
+    </main>
+    <footer class="footer">
+      <img class="footer__img-line img-for-blog" src="images/line-after-map.png" alt="line">
+      <img class="footer__img-line" src="images/after-about-us.png" alt="line">
+      <img class="footer__img-cofee" src="images/cofee.png" alt="cofee">
+      <img class="footer__img-beans" src="images/beans.png" alt="beans">
+      <div class="footer__info">
+        <h3 class="footer__info-title">
+          Подписка на новости и рассылку
+        </h3>
+        <p class="footer__info-text">
+          Подпишитесь на нашу рассылку прямо сейчас и будьте в курсе новых поставок, скидок и эксклюзивных предложений.
+        </p>
+        <form class="footer__form">
+          <input class="footer__form-input" type="email" placeholder="Ваш email">
+          <button class="footer__form-button" type="submit">Подписаться</button>
+      </form>
+      <p class="footer__form-accept">Нажимая на кнопку “Подписаться”, вы принимаете правила <a class="footer__form-accept--link" href="#"> пользовательского соглашения</a></p>
+
+      </div>
+        <div class="footer__nav">
+
+        <a class="nav__logo" href="#">
+          <img src="images/logo.svg" alt="logo">
+        </a>
+        <ul class="footer__nav-menu">
+          <li class="footer__nav-menu-list"><a class="footer__nav-menu-list--link" href="../app/index.html">Каталог товаров</a> </li>
+          <li class="footer__nav-menu-list"><a class="footer__nav-menu-list--link" href="../app/blog.html">Блог</a> </li>
+          <li class="footer__nav-menu-list"><a class="footer__nav-menu-list--link" href="../app/contact.html">Контакты</a> </li>
+        </ul>
+        </div>
+    </footer>
+  </div>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

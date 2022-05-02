@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cofee</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,700;0,900;1,500;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <img class="background-image" src="images/bacground.png" alt=""> 
+  <header class="header">
+    <nav class="nav">
+      <a href="../app/index.html">
+        <img class="nav__logo" src="images/logo.svg" alt="logo">
+      </a>
+      <ul class="nav__menu">
+        <li class="nav__menu-list"><a class="nav__menu-list--link" href="#main-catalog">Каталог</a> </li>
+        <li class="nav__menu-list"><a class="nav__menu-list--link" href="../app/blog.html">Блог</a> </li>
+        <li class="nav__menu-list"><a class="nav__menu-list--link" href="../app/contact.html">Контакты</a> </li>
+      </ul>
+      <ul class="nav__menu-btns">
+        <li class="nav__menu-list"><button class="nav__find-btn--open"> <img src="images/find.svg" alt="Vector"></button> </li>
+        <li class="nav__menu-list"><button class="nav__basket"> <a href="../app/basket.html"><img src="images/package.svg" alt="basket"></a></button></li>
+        <li class="nav__menu-list"><button class="nav__profile"> <img src="images/profile.svg" alt="profile"></button></li>
+      </ul>
+
+
+      <div class="nav__find nav__find--close">
+        <button class="nav__find-btn"> <img src="images/Vector.svg" alt="Vector"> </button>
+        <input class="nav__find-click" type="text" placeholder="Поиск по товарам" aria-label="Поиск">
+        <button class="nav__find-btn-close"> <img src="images/Path.svg" alt="Close"> </button>
+      </div>
+  
+    </nav>
+
+
+    <section class="autorization">
+    <div class="registration-container">
+    <div class="registration">
+      <div class="registration__entrance">
+        <img class="registration__entrance-img" src="images/cup-for-registration.png" alt="">
+        <img class="registration__entrance-beens" src="images/beens-for-registration.png" alt="">
+        <div class="registration__entrance-container">
+        <h5 class="registration__entrance-title">Добро пожаловать!</h5>
+        <p class="registration__entrance-text">Уже есть аккаунт?</p>
+        </div>
+        <button class="registration__entrance-btn">Войти</button>
+      </div>
+      <div class="registration__base">
+        <img class="registration__base-logo" src="images/logo-for-registration.svg" alt="">
+        <img class="registration__close" src="images/close-registration.svg" alt="">
+        <h4 class="registration__base-title">
+          Регистрация
+        </h4>
+        <p class="registration__base-text">
+          Зарегистрируйтесь на сайте, чтобы первым получать скидки и узнавать акционные предложения!
+        </p>
+        <form action="registration__base-form">
+          <input type="text" placeholder="Имя и фамилия" class="registration__base-form-item">
+          <input type="email" placeholder="Email" class="registration__base-form-item">
+          <input type="tel" placeholder="Телефон" class="registration__base-form-item">
+          <input type="password" placeholder="Придумайте пароль" class="registration__base-form-item">
+        </form>
+        <button class="registration__registration-btn">Зарегистрироваться</button>
+      </div>
+    </div>
+  </div>
+
+    <div class="entrance-container">
+      <div class="entrance">
+        <div class="entrance__registration">
+          <img class="entrance__registration-img" src="images/cup-for-registration.png" alt="">
+          <img class="entrance__registration-beens" src="images/beens-for-registration.png" alt="">
+          <h5 class="entrance__registration-title">Регистрация</h5>
+          <p class="entrance__registration-text">Получайте скидки первым!</p>
+          <button class="entrance__registration-btn">Зарегистрироваться</button>
+        </div>
+        <div class="entrance__base">
+          <img class="entrance__base-logo" src="images/logo-for-registration.svg" alt="">
+          <img class="entrance__close" src="images/close-registration.svg" alt="">
+          <h4 class="entrance__base-title">
+            Войти в личный кабинет
+          </h4>
+          <form action="entrance__base-form">
+            <input type="email" placeholder="Email" class="registration__base-form-item">
+            <input type="password" placeholder="Введите пароль" class="registration__base-form-item">
+          </form>
+          <button class="entrance__entrance-btn"><a href="/personal.html"> Войти</a></button>
+          <p class="entrance__forget-pass">Забыли пароль?</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="entrance-container--forget">
+      <div class="entrance--forget">
+        <div class="entrance__registration--forget">
+          <img class="entrance__registration-img--forget" src="images/cup-for-registration.png" alt="">
+          <img class="entrance__registration-beens--forget" src="images/beens-for-registration.png" alt="">
+          <h5 class="entrance__registration-title--forget">Регистрация</h5>
+          <p class="entrance__registration-text--forget">Получайте скидки первым!</p>
+          <button class="entrance__registration-btn--forget">Зарегистрироваться</button>
+        </div>
+        <div class="entrance__base--forget">
+          <img class="entrance__base-logo--forget" src="images/logo-for-registration.svg" alt="">
+          <img class="entrance__close--forget" src="images/close-registration.svg" alt="">
+          <h4 class="entrance__base-title--forget">
+            Забыли пароль?
+          </h4>
+          <p class="entrance__base-text--forget">Введите вашу почту и мы пришлем вам проверочный код на почту</p>
+          <form action="entrance__base-form--forget">
+            <input type="email" placeholder="Email" class="registration__base-form-item">
+          </form>
+          <button class="entrance__entrance-btn--forget">Получить код</button>
+          <p class="entrance__forget-pass--forget">Вернуться на страницу входа</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="recovery-container">
+      <div class="recovery">
+        <div class="recovery__registration">
+          <img class="recovery__registration-img" src="images/cup-for-registration.png" alt="">
+          <img class="recovery__registration-beens" src="images/beens-for-registration.png" alt="">
+          <h5 class="recovery__registration-title">Регистрация</h5>
+          <p class="recovery__registration-text">Получайте скидки первым!</p>
+          <button class="recovery__registration-btn">Зарегистрироваться</button>
+        </div>
+        <div class="recovery__base">
+          <img class="recovery__base-logo" src="images/logo-for-registration.svg" alt="">
+          <img class="recovery__close" src="images/close-registration.svg" alt="">
+          <h4 class="recovery__base-title">
+            Забыли пароль?
+          </h4>
+          <p class="recovery__base-text">Мы выслали вам на почту проверочный код. 
+            Введите его и ниже и придумайте новый пароль</p>
+          <form action="recovery__base-form">
+            <input type="number" placeholder="Введите код" class="recovery__base-form-item">
+            <input type="password" placeholder="Введите новый пароль" class="recovery__base-form-item">
+          </form>
+          <button class="recovery__entrance-btn">Обновить пароль</button>
+          <p class="recovery__repeat-pass">Отправить код повторно?</p>
+        </div>
+      </div>
+    </div>
+  </section>
+    <div class="background"></div>
+  </header>
+
+  <div class="wrapper">
+    <main class="main">
+
+      <section class="top">
+        <div class="top__inner">
+          <div class="top__slider">
+          <div class="top-slider-item">
+                    <div class="top__slider-for_flex">
+                    <div class="top__slider-info">
+                        <h1 class="top__slider-title">Свежеобжаренный кофе </h1>
+                            <p class="top__slider-text">
+                              Кофе Харьковской обжарки из разных стран произрастания с доставкой на дом.</p> 
+                              <p class="top__slider-text top__slider-text-one">Мы обжариваем кофе каждые выходные. </p>
+                    </div>
+                <img class="top__slider-img" src="images/beens-full.png" alt="images">
+                <img class="top__slider-img--cofee" src="images/cofee.png" alt="images">
+              </div>
+              <a href="#main-catalog"> <button class="top__slider-btn">Посмотреть каталог</button></a>
+          </div>
+          <div class="top-slider-item"> 
+              <div class="top__slider-for_flex">
+              <div class="top__slider-info">
+                  <h1 class="top__slider-title">Настоящий зеленый чай </h1>
+                      <p class="top__slider-text">
+                        Фруктовый, зеленый, черный или белый чай из разных стран произрастания с доставкой на дом.</p> 
+                        <p class="top__slider-text top__slider-text-one">Мы пополняем ассортимент чая каждые выходные. </p>
+              </div>
+          <img class="top__slider-img--cofee" src="images/tea.png" alt="images">
+        </div>
+        <a href="#main-catalog"> <button class="top__slider-btn">Посмотреть каталог</button></a>
+          </div>
+          <div class="top-slider-item">
+        <div class="top__slider-for_flex">
+        <div class="top__slider-info">
+            <h1 class="top__slider-title">Здоровое питание</h1>
+                <p class="top__slider-text">
+                  Самые лучшие блюда для Вашего организма на основе специальной рецептуры</p> 
+                  <p class="top__slider-text top__slider-text-one">Уникальные рецепты блюд от наилучших поваров Харькова.</p>
+        </div>
+    <img class="top__slider-img" src="images/food.png" alt="images">
+  </div>
+  <a href="#main-catalog"> <button class="top__slider-btn">Посмотреть каталог</button></a>
+          </div> 
+            
+          </div>
+        </div>
+      </section>
+
+      <section class="catalogProd">
+<img class="catalogProd__background-img-beans" src="images/beans-for-background.png" alt="">        
+<img class="catalogProd__background-img" src="images/before-catalog.png" alt="">
+
+<h3 id="main-catalog" class="catalogProd__title">Каталоги нашей продукции</h3>
+<ul  class="catalogProd__list">
+  <li class="catalogProd__list-item">
+    <img class="catalogProd__list-img" src="images/production/cofee.png" alt=""> 
+    <p class="catalogProd__list-name">Свежеобжаренный кофе</p>
+    <a href="../app/catalog-cofee.html"> <button class="catalogProd__list-btn">Купить</button></a>
+  </li>
+  <li class="catalogProd__list-item">
+    <img class="catalogProd__list-img catalogProd__list-img--tea" src="images/production/tea.png" alt=""> 
+    <p class="catalogProd__list-name">Чай и кофейные напитки</p>
+    <a href="../app/catalog-tea.html"> <button class="catalogProd__list-btn">Купить</button></a>
+  </li>
+  <li class="catalogProd__list-item">
+    <img class="catalogProd__list-img" src="images/production/cofeemachine.png" alt=""> 
+    <p class="catalogProd__list-name">Продукция для вендинга</p>
+    <a href="../app/catalog-vending.html"> <button class="catalogProd__list-btn">Купить</button></a>
+  </li>
+  <li class="catalogProd__list-item">
+    <img class="catalogProd__list-img" src="images/production/food.png" alt=""> 
+    <p class="catalogProd__list-name">Здоровое питание</p>
+    <a href="../app/catalog-food.html"> <button class="catalogProd__list-btn">Купить</button></a>
+  </li>
+</ul>
+
+      </section>
+
+      <section  class="discount">
+        <h3 class="discount__title">
+          Товары со скидкой
+        </h3>
+        <p class="discount__title-text">
+          Наша компания предлагает покупать товар со скидкой не только в дни распродаж 
+          или в течение действия ограниченных предложений, но и пользоваться скидками постоянно!
+        </p>
+        <div id="discountgoods" class="discount-good__goods">
+
+          </div>
+        <p class="discount__container-link"><a href="#main-catalog">Смотреть все</a></p>
+      </section>
+
+      <section class="about-us">
+
+        <img class="about-us__linebefore" src="images/line-aboutus.png" alt="">
+        <h3 class="about-us__title">
+          Почему стоит работать именно с нами?
+        </h3>
+        <img class="about-us__background" src="images/bacground-about-us.png" alt="">
+<img class="our-work__background-img" src="images/bacground-our-work.jpg" alt="">        
+        <div class="about-us__container">
+        <div class="about-us__container-img">
+          <img class="about-us__img-cofee" src="images/pngwing.png" alt="">
+          <img class="about-us__img-beens" src="images/cafe-coffee-beans.png" alt="">
+
+          </div>
+          <div class="about-us__block">
+            <ul class="about-us__block-list">
+              <li class="about-us__block-item--cofee">
+                <h4 class="about-us__block-title">
+              Всегда свежая обжарка
+            </h4>
+            <p class="about-us__block-text">
+              Подбор степени обжарки под каждый сорт кофе. Всегда свежая обжарка
+            </p>
+              </li>
+              <li class="about-us__block-item--label">
+                <h4 class="about-us__block-title">
+              Лучшие цены на продукцию
+            </h4>
+            <p class="about-us__block-text">
+              Благодаря крупным объемам производства мы даем лучшие цены на нашу продукцию
+            </p>
+              </li>
+              <li class="about-us__block-item--const">
+                <h4 class="about-us__block-title">
+              Консультации 24/7
+            </h4>
+            <p class="about-us__block-text">
+              Наши специалисты готовы всегда помочь 
+и подсказать вам с выбором кофе или другой продукции
+            </p>
+              </li>
+            </ul>
+            
+            
+            
+          </div>
+        </div>
+      </section>
+
+      <section class="our-work">
+        <img class="our-work__linebefore" src="images/after-about-us.png" alt="">
+      <img class="our-work__image-after" src="images/line-after-our.png" alt="" >  
+      <div class="our-work__container">
+        <h3 class="our-work__title">
+          Как мы обжариваем наш кофе:
+        </h3>
+        <p class="our-work__text">
+          Компания Нью Рефайнинг Груп находится в г. Калининграде и имеет свой склад и представительство 
+          в Москве. Завод работает на рынке свежеобжаренного кофе и растворимой продукции более 15 лет. Завод имеет немецкое оборудование марки Probat по обжарке кофе и итальянские агломераторы 
+          для производства растворимой продукции. 
+          </p>
+          <p class="our-work__text">
+          Кофе поставляется в контейнерах напрямую с плантаций по всему миру. Компания имеет долгосрочные контракты по поставке продукции. Каждая партия проходит строгий контроль на заводе для проверки зерна. Зеленое зерно обжаривается, проходит процесс дегазации и тут же отправляется клиентам. Наши обжарщики прошли обучение в России и за рубежом. 
+          У нас свой подход к каждой партии зерна.</p> 
+          <p class="our-work__text">
+          Мы раскрываем вкус каждого сорта кофе.
+        </p>
+    </div>
+      <a href="#main-catalog"> <button class="our-work__slider-btn">Перейти в каталог</button></a>
+
+      </section>
+
+      <div class="for-back">
+         <img class="news__img-line" src="images/Vector-up-news.png" alt="">
+        <img class="news__img-background" src="images/background-news.png" alt="">
+      </div>
+
+      <section class="news">
+        <div class="news__title">
+          <h3 class="news__title-text">Новости компании</h3>
+          <p class="news__container-link"><a href="/blog.html">Читать все</a></p>
+        </div>
+        <div class="news__container">
+          <ul class="news__container-list">
+
+            <li class="news__container-list-item">
+              <img class="news__container-item--img" src="images/tiger-codee.png" alt="" >
+              <div class="news__container-item--block">
+                <h4 class="news__container-item--block-title">
+                  Танзанийский кофе. Откуда он взялся и почему мы его так любим?
+                </h4>
+                <p class="news__container-item--block-text">Танзания – красивая африканская страна.
+                   Именно здесь расположены легендарные 
+                  географические объекты – вулкан Килиманджаро и озеро Виктория. </p>
+                <p class="news__container-item--block-text">Но наш интерес вызван не столько природными 
+                  красотами, сколько кофе...</p>
+                <a class="news__container-item--block-link" href="/blog.html#news">Подробнее</a>
+              </div>
+            </li>
+
+            <li class="news__container-list-itemL" >
+              <div class="news__container-item--lblock">
+              <h4 class="news__container-item--block-title">Африканский кофе Кения АА</h4>
+              <p class="news__container-item--block-text">Кения АА – у этого кофе, из африканской 
+                страны, репутация одного из самых вкусных и ярких сортов в мире. Многие обжарщики 
+                высоко оценивают местные разновидности высокогорной арабики.</p>
+                <a class="news__container-item--block-link" href="/blog.html#news">Подробнее</a>
+            </div>
+          </li>
+
+            <li class="news__container-list-itemL">
+              <div class="news__container-item--lblock">
+                <h4 class="news__container-item--block-title">Африканский кофе Кения АА</h4>
+                <p class="news__container-item--block-text">Кения АА – у этого кофе, из африканской 
+                  страны, репутация одного из самых вкусных и ярких сортов в мире. Многие обжарщики 
+                  высоко оценивают местные разновидности высокогорной арабики.</p>
+                  <a class="news__container-item--block-link" href="/blog.html#news">Подробнее</a>
+              </div>
+            </li>         
+
+            <li class="news__container-list-item">
+              <img class="news__container-item--img" src="images/tiger-codee.png" alt="" >
+              <div class="news__container-item--block">
+                <h4 class="news__container-item--block-title">
+                  Танзанийский кофе. Откуда он взялся и почему мы его так любим?
+                </h4>
+                <p class="news__container-item--block-text">Танзания – красивая африканская страна.
+                   Именно здесь расположены легендарные 
+                  географические объекты – вулкан Килиманджаро и озеро Виктория. </p>
+                <p class="news__container-item--block-text">Но наш интерес вызван не столько природными 
+                  красотами, сколько кофе...</p>
+                <a class="news__container-item--block-link" href="/blog.html#news">Подробнее</a>
+              </div>
+            </li>
+        
+          </ul>
+        </div>
+      </section>
+     
+      <section class="social">
+        <div class="social__title">
+        <h3 class="social__title-text">
+          Мы в Instagram
+        </h3>
+        <a href="#"><img class="social__title-img" src="images/inst.svg" alt="Instagram"></a> 
+      </div>
+        <div class="social__block">
+          <div class="social__block-images">
+            <img class="social__block-image" src="images/iphone.png" alt="">
+            <img class="social__block-image2" src="images/iphone2.png" alt="">
+          </div>
+          <div class="social__block-posts">
+            <ul class="social__block-posts--list">
+              <li class="social__block-posts--list_item"> <img class="social__block-posts--list_img" src="images/instagram/for-inst1.jpg" alt="" ></li>
+              <li class="social__block-posts--list_item"> <img class="social__block-posts--list_img" src="images/instagram/for-inst3.jpg" alt="" ></li>
+              <li class="social__block-posts--list_item"> <img class="social__block-posts--list_img" src="images/instagram/for-inst2.jpg" alt="" ></li>
+              <li class="social__block-posts--list_item"> <img class="social__block-posts--list_img" src="images/instagram/for-inst4.jpg" alt=""></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <img class="social__underline" src="images/line-under-social.png" alt="">
+      <img class="footer__img-line" src="images/line.png" alt="line">
+      <img class="footer__img-cofee" src="images/cofee.png" alt="cofee">
+      <img class="footer__img-beans" src="images/beans.png" alt="beans">
+      <div class="footer__info">
+        <h3 class="footer__info-title">
+          Подписка на новости и рассылку
+        </h3>
+        <p class="footer__info-text">
+          Подпишитесь на нашу рассылку прямо сейчас и будьте в курсе новых поставок, скидок и эксклюзивных предложений.
+        </p>
+        <form class="footer__form">
+          <input class="footer__form-input" type="email" placeholder="Ваш email">
+          <button class="footer__form-button" type="submit">Подписаться</button>
+      </form>
+      <p class="footer__form-accept">Нажимая на кнопку “Подписаться”, вы принимаете правила <a class="footer__form-accept--link" href="#"> пользовательского соглашения</a></p>
+
+      </div>
+        <div class="footer__nav">
+
+        <a class="nav__logo" href="#">
+          <img src="images/logo.svg" alt="logo">
+        </a>
+        <ul class="footer__nav-menu">
+          <li class="footer__nav-menu-list"><a class="footer__nav-menu-list--link" href="#main-catalog">Каталог товаров</a> </li>
+          <li class="footer__nav-menu-list"><a class="footer__nav-menu-list--link" href="../app/blog.html">Блог</a> </li>
+          <li class="footer__nav-menu-list"><a class="footer__nav-menu-list--link" href="../app/contact.html">Контакты</a> </li>
+        </ul>
+        </div>
+    </footer>
+
+  </div>
+
+ <script src="js/main.min.js"></script> 
+ <script src="js/discount.js"></script> 
+</body>
+
+</html>
